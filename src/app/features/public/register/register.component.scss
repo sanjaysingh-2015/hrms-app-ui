@@ -1,0 +1,150 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* LEFT SIDE */
+.left-pane {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FORM CARD */
+.form-card {
+  width: 380px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.form-card h2 {
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* VALIDATION */
+small {
+  color: red;
+  font-size: 12px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+button:disabled {
+  background: #c7d2fe;
+  cursor: not-allowed;
+}
+
+/* LINKS */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.login-link span {
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* MESSAGES */
+.success-msg {
+  margin-top: 15px;
+  color: green;
+  font-size: 14px;
+}
+
+.error-msg {
+  margin-top: 15px;
+  color: red;
+  font-size: 14px;
+}
+
+/* RIGHT SIDE */
+.right-pane {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.content {
+  max-width: 400px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.highlight {
+  color: #4f46e5;
+}
+
+.content p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .register-container {
+    flex-direction: column;
+  }
+
+  .left-pane, .right-pane {
+    width: 100%;
+    padding: 30px;
+  }
+}
