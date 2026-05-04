@@ -1,0 +1,9 @@
+<aside class="sidebar">
+  <ul>
+    <li *ngFor="let menu of menus">
+      <a [routerLink]="menu.uiPath">
+        {{ menu.displayName }}
+      </a>
+    </li>
+  </ul>
+</aside>
